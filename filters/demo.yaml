@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     NAME: chandu
-    website: devara.chandrasekhar1@tcs.com
+    website: https://www.joindevops.com/batch-74s
   tasks:
   - name: convert into upper case
     debug:
