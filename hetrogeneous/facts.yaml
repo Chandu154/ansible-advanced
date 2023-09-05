@@ -8,10 +8,10 @@
 
   - name: add user ubuntu
     ansible.builtin.command: adduser chandu
-    when: ansible_facts['distribution'] == "ubuntu"
+    when: ansible_facts['distribution'] == "Ubuntu"
 
   
   - name: add user centos
     ansible.builtin.command: useradd chandu
-    when: ansible_facts['distribution'] == "centos"   
+    when: ansible_facts['distribution'] == "CentOs"   
       
