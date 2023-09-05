@@ -9,4 +9,8 @@
 
   - name: convert into lower case
     debug:
-      msg: "hello {{ NAME | lower }}"      
+      msg: "hello {{ NAME | lower }}"
+
+  - name: printing undefined variables
+    debug:
+      msg: "hell {{COURSE}}"          
