@@ -13,4 +13,4 @@
 
   - name: printing undefined variables
     debug:
-      msg: "hell {{COURSE}}"          
+      msg: "hell {{COURSE | default 'Devops'}}"          
