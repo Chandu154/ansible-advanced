@@ -3,6 +3,7 @@
   vars:
     NAME: chandu
     website: https://www.joindevops.com/batch-74s
+    greetings: hi ram, how are you 
   tasks:
   - name: convert into upper case
     debug:
@@ -18,4 +19,8 @@
 
   - name: extract host name
     debug:
-      msg: "hell {{website | urlsplit ('hostname')}}"     
+      msg: "hell {{website | urlsplit ('hostname')}}"
+
+  - name: split values
+    debug:
+      msg: "hell {{greetings | split (',')}}"              
